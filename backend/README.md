@@ -326,19 +326,3 @@ All routes are mounted under `/api` (e.g. `http://localhost:5000/api/blogs`).
 | 409 | Conflict | Duplicate email on registration |
 | 500 | Internal Server Error | Unexpected server-side failure |
 
-## Testing
-
-A ready-to-use Postman collection is included at:
-
-```
-collection/Blog App REST API Development.postman_collection.json
-```
-
-Import it into Postman, set the `baseURL` collection variable to your running server's URL (default `http://localhost:5000`), and run the requests in order — the collection auto-chains tokens and IDs between requests using Postman's pre-request and test scripts.
-
-## Postman documentation
-
-A postman documentation is included here
-
-https://documenter.getpostman.com/view/47007261/2sBYAuTBmd
-
