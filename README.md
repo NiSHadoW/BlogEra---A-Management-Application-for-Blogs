@@ -1,8 +1,8 @@
 # BlogEra
 
-A full-stack **Blog Management Application** built for the Batch 19 Next.js frontend assignment — a Node.js/Express/MySQL REST API paired with a Next.js + Tailwind CSS frontend, supporting three roles: **Guest**, **User**, and **Admin**.
+A full-stack **Blog Management Application** built with a Node.js/Express/MySQL REST API paired with a Next.js + Tailwind CSS frontend, supporting three roles: **Guest**, **User**, and **Admin**.
 
-Built strictly against the spec in [`rules/Rules.md`](rules/Rules.md): no hardcoded users, no mock data, no frontend-only authentication — every screen is driven by real backend API calls.
+Built strictly against the specs: no hardcoded users, no mock data, no frontend-only authentication — every screen is driven by real backend API calls.
 
 ## What's in this repo
 
