@@ -10,6 +10,7 @@ A full-featured blog management frontend built with **Next.js (App Router)** and
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Running the Application](#running-the-application)
+- [Demo Credentials](#demo-credentials)
 - [Backend Dependency](#backend-dependency)
 - [Application Routes](#application-routes)
 - [User & Admin Functionality](#user--admin-functionality)
@@ -70,6 +71,16 @@ npm run dev
 ```
 
 The app runs at [http://localhost:3000](http://localhost:3000). The backend (see [Backend Dependency](#backend-dependency)) must be running for any page to show real data.
+
+## Demo Credentials
+
+Seeded directly in the backend database — use these to log in and explore each role without registering a new account:
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | `admin@test.com` | `admin1234` |
+
+Register a new account via `/register` to try the User role, or promote any registered account to admin by setting `role = 'admin'` on its row in the `users` table (there is no self-promotion endpoint, by design).
 
 ## Backend Dependency
 
