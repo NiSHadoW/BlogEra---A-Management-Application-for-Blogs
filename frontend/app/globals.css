@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+}
+
+body {
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+/* Every clickable button gets a hand cursor by default, so individual
+   components don't each need their own "cursor-pointer" class. */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
+button:disabled,
+[role="button"][aria-disabled="true"] {
+  cursor: not-allowed;
+}
