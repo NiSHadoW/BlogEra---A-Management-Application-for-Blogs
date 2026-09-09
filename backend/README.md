@@ -16,8 +16,6 @@ A **Role-Based Blog Management REST API** built with Node.js, Express, and MySQL
 - [API Endpoints](#api-endpoints)
 - [Role-Based Access Matrix](#role-based-access-matrix)
 - [HTTP Status Codes](#http-status-codes)
-- [Testing](#testing)
-- [Postman Documentation](#postman-documentation)
 
 ## Tech Stack
 
