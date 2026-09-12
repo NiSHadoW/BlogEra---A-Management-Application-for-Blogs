@@ -82,6 +82,29 @@ Seeded directly in the backend database — use these to log in and explore each
 
 Register a new account via `/register` to try the User role, or promote any registered account to admin by setting `role = 'admin'` on its row in the `users` table (there is no self-promotion endpoint, by design).
 
+### Registration rules
+
+The `/register` form requires:
+
+| Field | Rule |
+|---|---|
+| Email | Standard `something@domain.tld` pattern (validated client-side and re-checked by the backend) |
+| Password | At least 8 characters |
+| First name, Last name | Required, non-empty |
+
+Client-side validation (`utils/validators.js`) mirrors the backend's own rules exactly, so a submission that passes locally will also pass the API — it's a UX shortcut, not a replacement for the backend's real validation.
+
+**Example registration:**
+
+| Field | Value |
+|---|---|
+| First name | `Iffat` |
+| Last name | `Nishat` |
+| Email | `iffatnishat54+demo@gmail.com` |
+| Password | `demo1234` |
+
+This is a real registered account in the database (Gmail's `+demo` alias tag routes to the same inbox), created via a live `POST /register` call, not a hypothetical example.
+
 ## Backend Dependency
 
 This frontend has **no data of its own** — it is a pure client for the [Blog REST API](../backend). Start the backend first:
