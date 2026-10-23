@@ -22,18 +22,15 @@ Built strictly against the specs: no hardcoded users, no mock data, no frontend-
 ## Quick start
 
 ```bash
-# Backend (http://localhost:5000)
-cd backend
-npm install
-cp .env.example .env   # fill in real DB/JWT/SMTP values
-npm run dev
-
-# Frontend (http://localhost:3000)
-cd frontend
-npm install
-cp .env.example .env.local
-npm run dev
+# Copy backend/.env.example to backend/.env and fill in your DB/JWT/SMTP values.
+# Docker uses host.docker.internal as DB_HOST by default to reach a MySQL server
+# running on the host machine.
+docker compose up --build
 ```
+
+The frontend is available at http://localhost:3000 and the backend API at
+http://localhost:5000. Set `DB_HOST` in the root `.env` file to override the
+default database host.
 
 Full setup details, environment variables, and API/route references live in each package's own README linked above.
 
